@@ -1,4 +1,7 @@
 package com.company;
+// http://stackoverflow.com/questions/5385024/mod-in-java-produces-negative-numbers
+
+import static java.lang.Math.floorMod;
 
 /**
  * Created by Phoenix on 2016/7/1.
@@ -10,10 +13,7 @@ public class Rotator {
 
         for ( int i = 0; i < data.length; ++i)
         {
-            int idx = (i + n) % data.length;
-
-            idx = n < 0  ? idx + data.length : idx;
-
+            int idx = floorMod(i + n, data.length);
             d[idx] = data[i];
         }
 

@@ -9,7 +9,7 @@ public class Main {
         Rotator r = new Rotator();
 
         //System.out.println( r.rotate().toString() );
-        Object[] obj = r.rotate(new Object[] {1.0, 2.0, 3.0}, 1);
+        Object[] obj = r.rotate(new Object[] {1, 2, 3, 4, 5}, -5);
 
         for ( int i = 0; i < obj.length; ++i )
         {
